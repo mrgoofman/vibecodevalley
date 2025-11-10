@@ -61,7 +61,7 @@ export async function onRequestPost(context) {
 
       return new Response(JSON.stringify({
         success: true,
-        message: 'Thanks for joining! Check your email for your free guide.'
+        message: 'Thanks for joining!'
       }), {
         status: 200,
         headers: { ...corsHeaders, 'Content-Type': 'application/json' }
