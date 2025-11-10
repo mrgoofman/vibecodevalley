@@ -190,10 +190,11 @@ email=user@example.com&source=hero
 ## Future Enhancements
 
 - [ ] Add email delivery integration (SendGrid, Mailgun, etc.)
-- [ ] Implement Google Analytics or Plausible
+- [ ] Implement Google Analytics or Plausible Analytics
 - [ ] Add OpenGraph and Twitter Card meta tags
 - [ ] Create an admin dashboard to view subscribers
 - [ ] Add email verification/double opt-in
+- [ ] Add A/B testing for conversion optimization
 
 ## Support
 

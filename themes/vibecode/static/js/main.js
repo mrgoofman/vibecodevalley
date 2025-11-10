@@ -165,3 +165,53 @@ function initScrollAnimations() {
 // Optional: Initialize scroll animations on load
 // Uncomment if you want fade-in animations for sections
 // initScrollAnimations();
+
+/**
+ * Track scroll depth for analytics
+ * Fires events at 25%, 50%, 75%, and 100% scroll depth
+ */
+(function initScrollDepthTracking() {
+    const scrollDepths = {
+        '25': false,
+        '50': false,
+        '75': false,
+        '100': false
+    };
+
+    function trackScrollDepth() {
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+        const scrollTop = window.scrollY || window.pageYOffset;
+        const scrollPercent = Math.round((scrollTop / (documentHeight - windowHeight)) * 100);
+
+        // Check each depth threshold
+        Object.keys(scrollDepths).forEach(depth => {
+            if (scrollPercent >= parseInt(depth) && !scrollDepths[depth]) {
+                scrollDepths[depth] = true;
+
+                // Send to Google Analytics if available
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'scroll_depth', {
+                        'event_category': 'engagement',
+                        'event_label': depth + '%',
+                        'value': parseInt(depth)
+                    });
+                }
+
+                console.log('Scroll depth tracked:', depth + '%');
+            }
+        });
+    }
+
+    // Throttle scroll events for performance
+    let scrollTimeout;
+    window.addEventListener('scroll', function() {
+        if (scrollTimeout) {
+            clearTimeout(scrollTimeout);
+        }
+        scrollTimeout = setTimeout(trackScrollDepth, 100);
+    });
+
+    // Track on page load (in case user refreshes mid-page)
+    window.addEventListener('load', trackScrollDepth);
+})();
