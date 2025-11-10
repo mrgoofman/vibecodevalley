@@ -1,0 +1,20 @@
+# Wrangler Configuration Template
+# Copy this file to wrangler.toml and update with your actual values
+# DO NOT commit wrangler.toml to git (it's in .gitignore)
+
+name = "vibecode-valley"
+compatibility_date = "2024-01-01"
+
+# D1 Database Binding
+# Replace YOUR_DATABASE_ID with the actual database ID from: wrangler d1 create vibecode-emails
+[[d1_databases]]
+binding = "DB"
+database_name = "vibecode-emails"
+database_id = "YOUR_DATABASE_ID"
+
+# Pages Configuration
+[env.production]
+vars = { ENVIRONMENT = "production" }
+
+# For local development, you can use:
+# wrangler pages dev public --binding DB=YOUR_DATABASE_ID

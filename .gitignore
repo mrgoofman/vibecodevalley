@@ -1,0 +1,31 @@
+# Hugo build output
+/public/
+/resources/
+
+# Hugo cache
+/.hugo_build.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (if you add any npm packages later)
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# Cloudflare local development
+.wrangler/
+wrangler.toml
+
+# Logs
+*.log

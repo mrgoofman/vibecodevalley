@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Build AI-Powered Webapps — Even if You're Not a Developer. Learn the art of vibecoding with Moritz Lumetsberger.">
+    <title>Vibecode Valley - Learn to Build AI-Powered Webapps</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    {{ partial "google-analytics.html" . }}
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1 class="hero-title">Build Webapps — Even if You're Not a Developer</h1>
+                    <p class="hero-subtitle">Learn the art of vibecoding: a new way to build, host, and scale real webapps with the help of AI agents.</p>
+                </div>
+
+                <div class="hero-right">
+                    <div class="cta-box">
+                        <h3>🚀 Join the Course Waitlist</h3>
+                        <p>Get notified when the course launches.</p>
+
+                        <form id="hero-signup-form" class="signup-form">
+                            <div class="form-group">
+                                <input type="email" id="hero-email" name="email" placeholder="your@email.com" required>
+                                <button type="submit" class="btn-primary">Join the Waitlist</button>
+                            </div>
+                            <div class="form-message" id="hero-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- Section 1: What is Vibecoding? -->
+    <section class="section section-what">
+        <div class="container">
+            <h2 class="section-icon">What is Vibecoding?</h2>
+            <p class="lead">Coding is changing — AI agents can do the heavy lifting. You just need to learn how to communicate with them.</p>
+
+            <div class="feature-list">
+                <p>In this course, you'll learn how to:</p>
+                <ul>
+                    <li>Build a complete AI web app (your own LinkedIn post generator!)</li>
+                    <li>Use Claude Code effectively for development</li>
+                    <li>Connect databases, APIs (like OpenAI), and payment systems like Stripe</li>
+                    <li>Deploy your project and see it live on the internet</li>
+                </ul>
+            </div>
+
+            <p class="highlight">This isn't just a copy-paste tutorial — it's a hands-on journey into how things really work.<br>You'll learn to build with AI, not just follow instructions.</p>
+        </div>
+    </section>
+
+    <!-- Section 2: Who This Is For -->
+    <section class="section section-who">
+        <div class="container">
+            <h2 class="section-icon">This is For You, If</h2>
+
+            <div class="checklist">
+                <div class="check-item">You see potential where others see limits.</div>
+                <div class="check-item">You're done with just prompting — you want to create.</div>
+                <div class="check-item">You don't mind breaking a few things to learn how they work.</div>
+                <div class="check-item">You crave that "I built this" feeling.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: What You'll Build -->
+    <section class="section section-build">
+        <div class="container">
+            <h2 class="section-icon">What You'll Build</h2>
+            <p class="lead">A fully working LinkedIn Post Generator Webapp</p>
+
+            <div class="journey-list">
+                <p>You'll go from zero to:</p>
+                <ul>
+                    <li>Setting up your environment</li>
+                    <li>Designing your app flow</li>
+                    <li>Connecting APIs and databases</li>
+                    <li>Hosting your own webapp</li>
+                    <li>Adding authentication and payments</li>
+                </ul>
+            </div>
+
+            <p class="highlight">It's not just theory — it's a real, hands-on project you'll be proud of.</p>
+        </div>
+    </section>
+
+    <!-- Section 4: What You'll Learn -->
+    <section class="section section-learn">
+        <div class="container">
+            <h2 class="section-icon">What You'll Learn Along the Way</h2>
+
+            <div class="learning-grid">
+                <div class="learning-item" data-emoji="🧠">How to think like an AI-assisted developer</div>
+                <div class="learning-item" data-emoji="📋">How to plan and manage your project using Claude Code</div>
+                <div class="learning-item" data-emoji="💬">How to talk to your coding agents effectively</div>
+                <div class="learning-item" data-emoji="🏗️">How modern app architecture fits together</div>
+            </div>
+
+            <p class="highlight">You'll leave with both skills and confidence — ready to build your next project from scratch.</p>
+        </div>
+    </section>
+
+    <!-- Section 5: Meet Your Instructor -->
+    <section class="section section-instructor">
+        <div class="container">
+            <h2 class="section-icon">Meet Your Instructor</h2>
+
+            <div class="instructor-card">
+                <blockquote>
+                    "I'm a builder at heart: exploring bold ideas, experimenting with tools, and learning while doing. Vibecode Valley is my invitation for you to join this ride—no developer title needed, just curiosity, creativity, and the courage to start."
+                </blockquote>
+                <div class="instructor-info">
+                    <strong>Moritz Lumetsberger</strong><br>
+                    Exploring where creativity meets code.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: The Road Ahead -->
+    <section class="section section-roadmap">
+        <div class="container">
+            <h2 class="section-icon">The Road Ahead</h2>
+            <p class="lead">Course Structure:</p>
+
+            <div class="course-modules">
+                <div class="module">
+                    <span class="module-number">1</span>
+                    <span class="module-title">Introduction — What to Expect</span>
+                </div>
+                <div class="module">
+                    <span class="module-number">2</span>
+                    <span class="module-title">Vibecoding 101 — Understanding AI Agents</span>
+                </div>
+                <div class="module">
+                    <span class="module-number">3</span>
+                    <span class="module-title">Start Your Project — Setup & Hosting</span>
+                </div>
+                <div class="module">
+                    <span class="module-number">4</span>
+                    <span class="module-title">Define Your Webapp — Build Your Generator</span>
+                </div>
+                <div class="module">
+                    <span class="module-number">5</span>
+                    <span class="module-title">Coding in the Flow — Using Claude Code</span>
+                </div>
+                <div class="module">
+                    <span class="module-number">6</span>
+                    <span class="module-title">Add-ons — Git, Analytics, Auth, and Beyond</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section section-cta">
+        <div class="container">
+            <h2>✉️ Join the Course Waitlist</h2>
+            <p class="lead">Be the first to enter the Valley.<br>Get early access, updates, and a free intro guide.</p>
+
+            <form id="footer-signup-form" class="signup-form">
+                <div class="form-group">
+                    <input type="email" id="footer-email" name="email" placeholder="your@email.com" required>
+                    <button type="submit" class="btn-primary">Join the Waitlist</button>
+                </div>
+                <div class="form-message" id="footer-message"></div>
+            </form>
+
+            <p class="form-note">No spam. Just pure vibecoding energy.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-tagline">vibecodevalley.com — Learn to build, vibe, and create with AI.</p>
+            <p class="footer-copyright">© <span id="current-year"></span> Vibecode Valley</p>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

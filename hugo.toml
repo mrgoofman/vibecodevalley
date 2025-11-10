@@ -1,0 +1,14 @@
+baseURL = 'https://vibecodevalley.com/'
+languageCode = 'en-us'
+title = 'Vibecode Valley - Build AI-Powered Webapps'
+theme = 'vibecode'
+
+[params]
+  description = 'Learn the art of vibecoding: a new way to build, host, and scale real webapps with the help of AI agents.'
+  author = 'Moritz Lumetsberger'
+  googleAnalytics = 'G-XXXXXXXXXX'  # Replace with your actual GA4 Measurement ID
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

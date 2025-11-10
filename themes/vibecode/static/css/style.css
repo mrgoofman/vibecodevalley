@@ -1,0 +1,663 @@
+/* ==========================================
+   Vibecode Valley - Styles
+   Digital Zen meets Hacker Aesthetic
+   ========================================== */
+
+:root {
+    /* Color Palette */
+    --deep-indigo: #1a1b3a;
+    --darker-indigo: #0f1020;
+    --neon-blue: #4f9eff;
+    --neon-purple: #a855f7;
+    --neon-mint: #34d399;
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+    --gradient-glow: linear-gradient(135deg, rgba(79, 158, 255, 0.1), rgba(168, 85, 247, 0.1));
+
+    /* Spacing */
+    --container-max: 1200px;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+    --spacing-2xl: 6rem;
+
+    /* Typography */
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ==========================================
+   Reset & Base Styles
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--darker-indigo);
+    color: var(--text-primary);
+    line-height: 1.7;
+    font-size: 18px;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+/* ==========================================
+   Container
+   ========================================== */
+
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* ==========================================
+   Hero Section
+   ========================================== */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--deep-indigo);
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 20% 50%, rgba(79, 158, 255, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(52, 211, 153, 0.1) 0%, transparent 50%);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+    width: 100%;
+}
+
+.hero-left {
+    text-align: left;
+}
+
+.hero-right {
+    display: flex;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.cta-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(79, 158, 255, 0.2);
+    border-radius: 16px;
+    padding: var(--spacing-lg);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.cta-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.cta-box p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+    font-size: 1rem;
+}
+
+/* ==========================================
+   Form Styles
+   ========================================== */
+
+.signup-form {
+    margin-top: var(--spacing-md);
+}
+
+.form-group {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-group input[type="email"] {
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(79, 158, 255, 0.3);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-family: var(--font-family);
+    transition: all 0.3s ease;
+}
+
+.form-group input[type="email"]:focus {
+    outline: none;
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 0 3px rgba(79, 158, 255, 0.1);
+}
+
+.form-group input[type="email"]::placeholder {
+    color: var(--text-muted);
+}
+
+.btn-primary {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--gradient-primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: var(--font-family);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(79, 158, 255, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(79, 158, 255, 0.4);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.form-message {
+    margin-top: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    display: none;
+}
+
+.form-message.success {
+    display: block;
+    background: rgba(52, 211, 153, 0.1);
+    color: var(--neon-mint);
+    border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.form-message.error {
+    display: block;
+    background: rgba(239, 68, 68, 0.1);
+    color: #fca5a5;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.form-note {
+    margin-top: var(--spacing-sm);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* ==========================================
+   Section Styles
+   ========================================== */
+
+.section {
+    padding: var(--spacing-2xl) 0;
+    background: var(--darker-indigo);
+    border-top: 1px solid rgba(79, 158, 255, 0.1);
+}
+
+.section:nth-child(even) {
+    background: var(--deep-indigo);
+}
+
+.section-icon {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+
+.lead {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.6;
+}
+
+.highlight {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    text-align: center;
+    margin-top: var(--spacing-lg);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* Feature List */
+.feature-list {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.feature-list p {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-secondary);
+}
+
+.feature-list ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: var(--spacing-sm);
+}
+
+.feature-list li {
+    padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) 3.5rem;
+    position: relative;
+    color: var(--text-primary);
+    background: rgba(168, 85, 247, 0.05);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.feature-list li:hover {
+    background: rgba(168, 85, 247, 0.08);
+    transform: translateX(4px);
+    box-shadow: 0 4px 16px rgba(168, 85, 247, 0.15);
+}
+
+.feature-list li::before {
+    content: "→";
+    position: absolute;
+    left: var(--spacing-md);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--neon-purple);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Checklist */
+.checklist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.check-item {
+    padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) 6rem;
+    background: rgba(52, 211, 153, 0.05);
+    border: 1px solid rgba(52, 211, 153, 0.2);
+    border-radius: 12px;
+    font-size: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+}
+
+.check-item:hover {
+    background: rgba(52, 211, 153, 0.08);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(52, 211, 153, 0.15);
+}
+
+.check-item::before {
+    content: "✓";
+    position: absolute;
+    left: var(--spacing-md);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: var(--neon-mint);
+    color: var(--darker-indigo);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Project Highlight */
+.project-highlight {
+    text-align: center;
+    padding: var(--spacing-lg);
+    background: var(--gradient-glow);
+    border: 1px solid rgba(79, 158, 255, 0.2);
+    border-radius: 16px;
+    margin: var(--spacing-lg) 0;
+}
+
+.project-highlight h3 {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+}
+
+/* Journey List */
+.journey-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.journey-list p {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-secondary);
+}
+
+.journey-list ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: var(--spacing-sm);
+}
+
+.journey-list li {
+    padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) 3.5rem;
+    position: relative;
+    color: var(--text-primary);
+    background: rgba(168, 85, 247, 0.05);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.journey-list li:hover {
+    background: rgba(168, 85, 247, 0.08);
+    transform: translateX(4px);
+    box-shadow: 0 4px 16px rgba(168, 85, 247, 0.15);
+}
+
+.journey-list li::before {
+    content: "→";
+    position: absolute;
+    left: var(--spacing-md);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--neon-purple);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Learning Grid */
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.learning-item {
+    padding: var(--spacing-lg) var(--spacing-md);
+    background: transparent;
+    border: 2px solid rgba(79, 158, 255, 0.3);
+    border-radius: 16px;
+    font-size: 1.05rem;
+    color: var(--text-primary);
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.learning-item:hover {
+    border-color: var(--neon-blue);
+    background: rgba(79, 158, 255, 0.05);
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(79, 158, 255, 0.2);
+}
+
+.learning-item::before {
+    content: attr(data-emoji);
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Instructor Card */
+.instructor-card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(52, 211, 153, 0.2);
+    border-radius: 16px;
+    text-align: center;
+}
+
+.instructor-card blockquote {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.instructor-info {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.instructor-info strong {
+    color: var(--neon-mint);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* Course Modules */
+.course-modules {
+    max-width: 800px;
+    margin: var(--spacing-lg) auto;
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.module {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: rgba(79, 158, 255, 0.05);
+    border: 1px solid rgba(79, 158, 255, 0.2);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.module:hover {
+    background: rgba(79, 158, 255, 0.08);
+    transform: translateX(8px);
+}
+
+.module-number {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.module-title {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+/* ==========================================
+   CTA Section
+   ========================================== */
+
+.section-cta {
+    text-align: center;
+    background: var(--deep-indigo);
+    padding: var(--spacing-2xl) 0;
+}
+
+.section-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.section-cta .signup-form {
+    max-width: 600px;
+    margin: var(--spacing-lg) auto;
+}
+
+/* ==========================================
+   Footer
+   ========================================== */
+
+.footer {
+    background: var(--darker-indigo);
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+    border-top: 1px solid rgba(79, 158, 255, 0.1);
+}
+
+.footer-tagline {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-xs);
+    font-weight: 400;
+}
+
+.footer-copyright {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* ==========================================
+   Responsive Design
+   ========================================== */
+
+@media (max-width: 968px) {
+    body {
+        font-size: 16px;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: var(--spacing-lg) 0;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .hero-left {
+        text-align: center;
+    }
+
+    .cta-box {
+        padding: var(--spacing-md);
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .form-group input[type="email"],
+    .btn-primary {
+        width: 100%;
+    }
+
+    .section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .learning-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .module {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ==========================================
+   Animations
+   ========================================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Smooth scrolling for all links */
+a {
+    color: var(--neon-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--neon-purple);
+}
