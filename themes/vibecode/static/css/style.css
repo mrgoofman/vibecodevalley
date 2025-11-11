@@ -66,6 +66,41 @@ body {
 }
 
 /* ==========================================
+   Header
+   ========================================== */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(15, 16, 32, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(79, 158, 255, 0.1);
+}
+
+.header-content {
+    padding: var(--spacing-sm) 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    transition: color 0.3s ease;
+}
+
+.site-logo:hover {
+    color: var(--neon-blue);
+}
+
+/* ==========================================
    Hero Section
    ========================================== */
 
@@ -126,6 +161,34 @@ body {
     font-size: clamp(1rem, 2vw, 1.25rem);
     color: var(--text-secondary);
     line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+}
+
+/* QR Code */
+.qr-code-container {
+    margin-top: var(--spacing-lg);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(79, 158, 255, 0.2);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    display: block;
+}
+
+.qr-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin: 0;
 }
 
 .cta-box {
