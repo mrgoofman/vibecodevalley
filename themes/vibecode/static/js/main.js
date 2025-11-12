@@ -226,7 +226,7 @@ function initScrollAnimations() {
 
     function checkScroll() {
         const heroSection = document.querySelector('.hero');
-        const footerSection = document.querySelector('.footer-signup');
+        const ctaSection = document.querySelector('.section-cta');
         if (!heroSection) return;
 
         const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
@@ -235,11 +235,11 @@ function initScrollAnimations() {
         // Show CTA after hero section
         const showCTA = window.scrollY > heroBottom;
 
-        // Hide CTA when reaching footer section
+        // Hide CTA when reaching CTA section
         let hideCTA = false;
-        if (footerSection) {
-            const footerTop = footerSection.offsetTop;
-            hideCTA = scrollPosition > footerTop;
+        if (ctaSection) {
+            const ctaSectionTop = ctaSection.offsetTop;
+            hideCTA = scrollPosition > ctaSectionTop;
         }
 
         if (showCTA && !hideCTA) {
@@ -257,12 +257,12 @@ function initScrollAnimations() {
 })();
 
 /**
- * Scroll to footer function
+ * Scroll to CTA section function
  */
 function scrollToFooter() {
-    const footer = document.querySelector('.footer-signup');
-    if (footer) {
-        footer.scrollIntoView({
+    const ctaSection = document.querySelector('.section-cta');
+    if (ctaSection) {
+        ctaSection.scrollIntoView({
             behavior: 'smooth',
             block: 'center'
         });

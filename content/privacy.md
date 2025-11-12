@@ -9,17 +9,15 @@ date: 2025-01-12
 
 ## 1. Introduction
 
-Rendersnek GmbH ("we," "us," or "our") operates Vibecode Valley (vibecodevalley.com). This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you use our Service.
+snekmedia GmbH ("we," "us," or "our") operates Vibecode Valley (vibecodevalley.com). This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you use our Service.
 
 We are committed to protecting your privacy and ensuring transparency in our data practices. This policy complies with the General Data Protection Regulation (GDPR) and applicable Austrian data protection laws.
 
 ## 2. Data Controller
 
-**Rendersnek GmbH**
+**snekmedia GmbH**
 For complete contact and company information, please visit:
 [Imprint](https://rendersnek.com/imprint)
-
-Email: privacy@rendersnek.com
 
 ## 3. Information We Collect
 
@@ -174,7 +172,7 @@ Withdraw consent at any time for consent-based processing.
 ### 9.8 Right to Lodge a Complaint
 File a complaint with your local data protection authority.
 
-**To exercise your rights, contact us at:** privacy@rendersnek.com
+**To exercise your rights, contact us via the information provided at the end of this policy.**
 
 We will respond to your request within one month, extendable by two additional months for complex requests.
 
@@ -226,7 +224,7 @@ If you are a California resident, you have additional rights under the Californi
 
 **We do not sell personal information.**
 
-To exercise CCPA rights, contact us at: privacy@rendersnek.com
+To exercise CCPA rights, contact us via the information provided at the end of this policy.
 
 ## 15. Changes to This Privacy Policy
 
@@ -242,14 +240,14 @@ Your continued use of the Service after changes are posted constitutes acceptanc
 
 For questions, concerns, or requests regarding this Privacy Policy or our data practices:
 
-**Email:** privacy@rendersnek.com
+**Email:** office(ät)rendersnek.com
 
 **Postal Address:**
-Rendersnek GmbH
+snekmedia GmbH
 [Full address available in imprint](https://rendersnek.com/imprint)
 
 **Data Protection Officer:**
-For GDPR-related inquiries, you may contact our Data Protection Officer at: dpo@rendersnek.com
+For GDPR-related inquiries, you may contact our Data Protection Officer at: office(ät)rendersnek.com
 
 ---
 

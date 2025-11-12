@@ -572,6 +572,25 @@ body {
     transform: translateY(-4px);
 }
 
+.instructor-image {
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto var(--spacing-md);
+    border: 3px solid rgba(52, 211, 153, 0.3);
+    box-shadow: 0 4px 16px rgba(52, 211, 153, 0.2);
+    transition: all 0.3s ease;
+    background: rgba(15, 16, 32, 0.8);
+}
+
+.instructor-card:hover .instructor-image {
+    border-color: rgba(52, 211, 153, 0.5);
+    box-shadow: 0 6px 24px rgba(52, 211, 153, 0.3);
+    transform: scale(1.05);
+}
+
 .instructor-card blockquote {
     font-size: 1.15rem;
     font-style: italic;
@@ -589,6 +608,26 @@ body {
     color: var(--neon-mint);
     font-weight: 600;
     font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    color: #0077B5;
+    transition: all 0.3s ease;
+}
+
+.linkedin-link:hover {
+    color: var(--neon-blue);
+    transform: translateY(-2px);
+}
+
+.linkedin-icon {
+    width: 16px;
+    height: 16px;
 }
 
 /* Course Modules */
@@ -658,21 +697,23 @@ body {
    ========================================== */
 
 .footer {
-    background: rgba(15, 16, 32, 0.5);
-    backdrop-filter: blur(20px);
-    padding: var(--spacing-xl) 0 var(--spacing-md);
-    border-top: 1px solid rgba(79, 158, 255, 0.15);
-    margin-top: var(--spacing-2xl);
 }
 
 .footer-content {
+    background: rgba(15, 16, 32, 0.5);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(79, 158, 255, 0.15);
+    padding: var(--spacing-md) 0 var(--spacing-sm);
+}
+
+.footer-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: var(--spacing-xl);
-    padding-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
     border-bottom: 1px solid rgba(79, 158, 255, 0.08);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
 }
 
 .footer-left {
@@ -701,17 +742,19 @@ body {
 @media (max-width: 968px) {
     body {
         font-size: 16px;
+        padding-top: 60px;
     }
 
     .hero {
         height: auto;
-        min-height: 100vh;
-        padding: var(--spacing-lg) 0;
+        min-height: calc(100vh - 60px);
+        padding: var(--spacing-md) 0;
     }
 
     .hero-content {
         grid-template-columns: 1fr;
-        gap: var(--spacing-lg);
+        gap: var(--spacing-md);
+        padding: 0 var(--spacing-sm);
     }
 
     .hero-left {
@@ -750,18 +793,46 @@ body {
 
     .footer-content {
         flex-direction: column;
-        gap: var(--spacing-md);
         align-items: center;
         text-align: center;
+        padding: var(--spacing-md) 0 var(--spacing-sm);
+        border-bottom: none;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 0.5rem;
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 
     .footer-left {
         text-align: center;
+        order: 2;
     }
 
     .footer-links {
         justify-content: center;
         width: 100%;
+        order: 1;
+        flex-direction: column;
+        gap: 0 !important;
+    }
+
+    .footer-links a {
+        display: block;
+        padding: 0.25rem 0;
+    }
+
+    .footer-tagline {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-copyright {
+        font-size: 0.75rem;
     }
 }
 

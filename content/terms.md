@@ -9,7 +9,7 @@ date: 2025-01-12
 
 ## 1. Agreement to Terms
 
-By accessing or using Vibecode Valley ("the Service"), operated by Rendersnek GmbH, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use the Service.
+By accessing or using Vibecode Valley ("the Service"), operated by snekmedia GmbH, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use the Service.
 
 ## 2. Description of Service
 
@@ -38,7 +38,7 @@ All content, materials, and intellectual property on Vibecode Valley, including 
 - Software code and documentation
 - Logos, trademarks, and branding
 
-...are owned by or licensed to Rendersnek GmbH and are protected by copyright, trademark, and other intellectual property laws.
+...are owned by or licensed to snekmedia GmbH and are protected by copyright, trademark, and other intellectual property laws.
 
 ### 4.2 Your License
 Upon enrollment in a course, you are granted a limited, non-exclusive, non-transferable license to access and use the course materials for personal, non-commercial educational purposes only.
@@ -93,7 +93,7 @@ THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIN
 
 TO THE MAXIMUM EXTENT PERMITTED BY LAW:
 
-Rendersnek GmbH SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO:
+snekmedia GmbH SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO:
 
 - Loss of profits or revenue
 - Loss of data or content
@@ -104,7 +104,7 @@ OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE SERVICE IN THE 
 
 ## 10. Indemnification
 
-You agree to indemnify, defend, and hold harmless Rendersnek GmbH, its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from:
+You agree to indemnify, defend, and hold harmless snekmedia GmbH, its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from:
 
 - Your use of the Service
 - Your violation of these Terms
@@ -129,16 +129,16 @@ If any provision of these Terms is found to be invalid or unenforceable, the rem
 
 ## 14. Entire Agreement
 
-These Terms, together with our Privacy Policy, constitute the entire agreement between you and Rendersnek GmbH regarding the Service and supersede all prior agreements and understandings.
+These Terms, together with our Privacy Policy, constitute the entire agreement between you and snekmedia GmbH regarding the Service and supersede all prior agreements and understandings.
 
 ## 15. Contact Information
 
 For questions regarding these Terms and Conditions, please contact:
 
-**Rendersnek GmbH**
+**snekmedia GmbH**
 [Imprint and Contact Details](https://rendersnek.com/imprint)
 
-Email: legal@rendersnek.com
+Email: office(ät)rendersnek.com
 
 ## 16. Language
 
