@@ -215,3 +215,53 @@ function initScrollAnimations() {
     // Track on page load (in case user refreshes mid-page)
     window.addEventListener('load', trackScrollDepth);
 })();
+
+/**
+ * Show/hide header CTA button based on scroll position
+ */
+(function initHeaderCTA() {
+    const headerCTA = document.getElementById('header-cta');
+
+    if (!headerCTA) return;
+
+    function checkScroll() {
+        const heroSection = document.querySelector('.hero');
+        if (!heroSection) return;
+
+        const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > heroBottom) {
+            headerCTA.classList.add('visible');
+        } else {
+            headerCTA.classList.remove('visible');
+        }
+    }
+
+    // Check on scroll
+    window.addEventListener('scroll', checkScroll);
+
+    // Check on load
+    window.addEventListener('load', checkScroll);
+})();
+
+/**
+ * Scroll to footer function
+ */
+function scrollToFooter() {
+    const footer = document.querySelector('.footer-signup');
+    if (footer) {
+        footer.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+        });
+
+        // Focus on email input after scroll
+        setTimeout(() => {
+            const emailInput = document.getElementById('footer-email');
+            if (emailInput) {
+                emailInput.focus();
+            }
+        }, 800);
+    }
+}
