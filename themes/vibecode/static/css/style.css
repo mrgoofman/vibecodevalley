@@ -648,8 +648,18 @@ body {
 .footer {
     background: var(--darker-indigo);
     padding: var(--spacing-lg) 0;
-    text-align: center;
     border-top: 1px solid rgba(79, 158, 255, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+}
+
+.footer-left {
+    text-align: left;
 }
 
 .footer-tagline {
@@ -711,6 +721,20 @@ body {
 
     .module {
         flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .footer-left {
+        text-align: center;
+    }
+
+    .footer-links {
+        align-items: center;
         text-align: center;
     }
 }
@@ -819,9 +843,10 @@ a:hover {
 
 .footer-links {
     display: flex;
-    gap: var(--spacing-md);
-    margin-top: var(--spacing-sm);
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    align-items: flex-end;
+    text-align: right;
 }
 
 .footer-links a {
