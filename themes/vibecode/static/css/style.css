@@ -550,18 +550,30 @@ body {
 }
 
 /* Instructor Card */
+.instructors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
 .instructor-card {
-    max-width: 800px;
-    margin: 0 auto;
     padding: var(--spacing-lg);
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(52, 211, 153, 0.2);
     border-radius: 16px;
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+.instructor-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(52, 211, 153, 0.3);
+    transform: translateY(-4px);
 }
 
 .instructor-card blockquote {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     font-style: italic;
     color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
@@ -569,14 +581,14 @@ body {
 }
 
 .instructor-info {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--text-primary);
 }
 
 .instructor-info strong {
     color: var(--neon-mint);
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 /* Course Modules */
@@ -724,6 +736,10 @@ body {
     }
 
     .learning-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .instructors-grid {
         grid-template-columns: 1fr;
     }
 
