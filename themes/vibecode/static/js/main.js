@@ -226,12 +226,23 @@ function initScrollAnimations() {
 
     function checkScroll() {
         const heroSection = document.querySelector('.hero');
+        const footerSection = document.querySelector('.footer-signup');
         if (!heroSection) return;
 
         const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
-        const scrollPosition = window.scrollY;
+        const scrollPosition = window.scrollY + window.innerHeight;
 
-        if (scrollPosition > heroBottom) {
+        // Show CTA after hero section
+        const showCTA = window.scrollY > heroBottom;
+
+        // Hide CTA when reaching footer section
+        let hideCTA = false;
+        if (footerSection) {
+            const footerTop = footerSection.offsetTop;
+            hideCTA = scrollPosition > footerTop;
+        }
+
+        if (showCTA && !hideCTA) {
             headerCTA.classList.add('visible');
         } else {
             headerCTA.classList.remove('visible');
